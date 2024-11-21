@@ -5,4 +5,3 @@ window.addEventListener("scroll", () => {
     // Ajusta a altura da barra amarela com base na rolagem
     yellowBar.style.height = `${scrollTop}px`;
   });
-  
