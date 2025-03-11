@@ -3,25 +3,6 @@ setTimeout(() => {
     document.getElementById("imagem").style.opacity = "1";
 }, 4000);
 
-window.addEventListener("scroll", function() {
-    let header = document.getElementById("header");
-    let logo = document.getElementById("logo");
-    let hero = document.getElementById("hero");
-
-    if (window.scrollY > 10) {
-        header.style.height = "100px";
-        logo.style.width = "100px";
-        logo.style.height = "100px";
-        hero.style.opacity = "0";
-        hero.style.transition = "opacity 1s ease-in-out";
-    } else {
-        header.style.height = "100px";
-        logo.style.width = "200px";
-        logo.style.height = "200px";
-        hero.style.opacity = "1";
-    }
-});
-
 // BUTTON
 window.addEventListener("scroll", function() {
     let button = document.getElementById("orcamento");
@@ -40,10 +21,9 @@ window.addEventListener("scroll", function() {
     let logo = document.getElementById("logo");
     let hero = document.getElementById("hero");
     let button = document.getElementById("orcamento");
-    let menu = document.querySelector(".menu");
-
+    
     if (window.scrollY > 100) {
-        header.style.height = "80px";
+        header.style.height = "25px";
         logo.style.width = "100px";
         logo.style.height = "100px";
         hero.style.opacity = "0";
