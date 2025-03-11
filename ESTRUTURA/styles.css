@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 50px;
+  padding: 50px 50px;
   transition: height 1s ease-in-out;
   z-index: 1000;
 }
@@ -62,7 +62,7 @@ body {
 /* MENU */
 .menu-left, .menu-right {
   display: flex;
-  gap: 30px;
+  gap: 100px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -79,7 +79,7 @@ body {
 .menu-left a, .menu-right a {
   text-decoration: none;
   color: black;
-  font-size: 18px;
+  font-size: 35px;
   font-weight: bold;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
