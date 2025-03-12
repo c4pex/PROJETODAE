@@ -44,4 +44,3 @@ window.addEventListener("scroll", function() {
         menu.style.visibility = "hidden";
     }
 });
-

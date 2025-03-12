@@ -66,6 +66,12 @@ body {
 
 /* FONTE HEADER */
 @font-face {
+  font-family: 'kidsboys';
+  src: url(/ESTRUTURA/fonts/KidsBoys.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'kidplay';
   src: url(/ESTRUTURA/fonts/kidplay\ Preview.otf);
   font-weight: normal;
@@ -76,17 +82,18 @@ body {
 .button {
   background-color: rgb(44, 206, 29);
   color: #f0f0f0;
-  padding: 10px 20px;
+  padding: 20px 30px;
   border: none;
   cursor: pointer;
+  font-family: 'kidsboys';
   font-size: 16px;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 25px;
   text-decoration: none;
   display: none;
   transition: opacity 0.5s ease-in-out;
   position: absolute;
-  right: 20px;
+  right: 60px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -97,7 +104,7 @@ body {
 /* MENU */
 .menu-left, .menu-right {
   display: flex;
-  gap: 50px;
+  gap: 120px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -107,11 +114,11 @@ body {
 }
 
 .menu-left {
-  left: 10%;
+  left: 15%;
 }
 
 .menu-right {
-  right: 10%;
+  right: 15%;
 }
 
 .menu-left a, .menu-right a {
