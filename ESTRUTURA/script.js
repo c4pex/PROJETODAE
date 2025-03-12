@@ -7,14 +7,15 @@ setTimeout(() => {
 window.addEventListener("scroll", function() {
     let button = document.getElementById("orcamento");
 
-    if (window.scrollY > 100) {
+    if (window.scrollY > 50) {
         button.style.display = "block";
         button.style.opacity = "1";
     } else {
-        button.style.opacity = "0";
+        button.style.opacity = "1";
         setTimeout(() => { button.style.display = "none"; }, 500);
     }
 });
+
 // MENU
 window.addEventListener("scroll", function() {
     let header = document.getElementById("header");
@@ -25,8 +26,8 @@ window.addEventListener("scroll", function() {
     if (window.scrollY > 100) {
         header.style.height = "25px";
         logo.style.width = "100px";
-        logo.style.height = "100px";
-        hero.style.opacity = "0";
+        logo.style.height = "92px";
+        hero.style.opacity = "1";
         hero.style.transition = "opacity 1s ease-in-out";
         button.style.display = "block";
         button.style.opacity = "1";
@@ -34,8 +35,8 @@ window.addEventListener("scroll", function() {
         menu.style.visibility = "visible";
     } else {
         header.style.height = "100px";
-        logo.style.width = "200px";
-        logo.style.height = "200px";
+        logo.style.width = "170px";
+        logo.style.height = "166px";
         hero.style.opacity = "1";
         button.style.opacity = "0";
         setTimeout(() => { button.style.display = "none"; }, 500);
@@ -44,4 +45,3 @@ window.addEventListener("scroll", function() {
     }
 });
 
-  

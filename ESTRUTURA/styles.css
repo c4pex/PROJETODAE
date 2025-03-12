@@ -4,7 +4,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  background-color: #8a242473;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,15 +41,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .kenburns {
-  position: absolute;
+  position: sticky;
   width: 100%;
   height: 100%;
   object-fit: cover;
   animation: kenburns-top 5s ease-in-out forwards;
+  z-index: -1;
 }
 
 @keyframes kenburns-top {
@@ -63,10 +64,17 @@ body {
   }
 }
 
-/*BOTÃO*/
+/* FONTE HEADER */
+@font-face {
+  font-family: 'kidplay';
+  src: url(/ESTRUTURA/fonts/kidplay\ Preview.otf);
+  font-weight: normal;
+  font-style: normal;
+}
 
+/*BOTÃO*/
 .button {
-  background-color: blue;
+  background-color: rgb(44, 206, 29);
   color: #f0f0f0;
   padding: 10px 20px;
   border: none;
@@ -83,16 +91,19 @@ body {
   transform: translateY(-50%);
 }
 .button:hover {
-  background-color: brown;
+  background-color: rgb(24, 104, 21);
 }
 
 /* MENU */
 .menu-left, .menu-right {
   display: flex;
-  gap: 100px;
+  gap: 50px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  font-family: 'kidplay', sans-serif;
+  font-size: 22px;
+
 }
 
 .menu-left {
@@ -124,5 +135,5 @@ section {
   align-items: center;
   justify-content: center;
   scroll-snap-align: start;
-  background-color: #6b1bac; /* Ajuste conforme necessário */
+  background-color: #6b1bac;
 }
